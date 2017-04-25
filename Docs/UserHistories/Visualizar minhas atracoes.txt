@@ -1,0 +1,1 @@
+Como usuário gostaria de visualizar as cinco ultimas “atrações” visitadas e ou pesquisadas.
