@@ -1,1 +1,0 @@
-Como cliente gostaria de selecionar os pontos turísticos que desejo visitar e traçar uma rota.
