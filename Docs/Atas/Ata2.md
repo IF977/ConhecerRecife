@@ -12,9 +12,10 @@
 
 # Definições
 
+- Levantamento das UserHistories;
 - Telas de usuários;
 - Funcionalidades aplicáveis;
-- 
+
 # Descrição
 
   Nesta Segunda reuniao foram definidas as telas, suas funcionalidades e organização para melhor apresentação ao usuario.
