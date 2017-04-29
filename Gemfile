@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 
- gem 'pg'
+ gem 'pg', '0.17.1'
 
 
 # Use Capistrano for deployment
