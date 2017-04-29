@@ -31,8 +31,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 
- gem 'pg', '0.17.1'
-
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -47,6 +45,7 @@ group :development, :test do
   gem 'cucumber'
   gem 'autotest'
   gem 'rspec-rails'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -62,5 +61,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'pg', '0.17.1'
+  gem 'pg'
 end
