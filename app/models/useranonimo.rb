@@ -1,0 +1,2 @@
+class Useranonimo < ApplicationRecord
+end

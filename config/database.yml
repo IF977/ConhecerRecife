@@ -14,9 +14,7 @@ default: &default
       adapter: postgresql
       encoding: unicode
       pool: 5
-      username: <%= ENV['appcr'] %>
-      password: <%= ENV['appcr'] %>
-      host:     <%= ENV['IP'] %>
+     
       
 
 development:

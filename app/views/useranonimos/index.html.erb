@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Useranonimos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Local</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @useranonimos.each do |useranonimo| %>
+      <tr>
+        <td><%= useranonimo.local %></td>
+        <td><%= link_to 'Show', useranonimo %></td>
+        <td><%= link_to 'Edit', edit_useranonimo_path(useranonimo) %></td>
+        <td><%= link_to 'Destroy', useranonimo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Useranonimo', new_useranonimo_path %>

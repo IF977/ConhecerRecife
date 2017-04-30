@@ -1,0 +1,22 @@
+<%= form_with(model: useranonimo, local: true) do |form| %>
+  <% if useranonimo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(useranonimo.errors.count, "error") %> prohibited this useranonimo from being saved:</h2>
+
+      <ul>
+      <% useranonimo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :local %>
+    <%= form.text_field :local, id: :useranonimo_local %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
