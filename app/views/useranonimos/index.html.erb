@@ -1,20 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Conhecer Recife</h1>
+<%= render 'cabecalho' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Localização Atual</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-</table>
-    <%= form_tag("/search", method: "get") do %>
-      <%= label_tag(:q, "Informe seu local") %>
-      <%= text_field_tag(:q) %>
-      <%= submit_tag("Search") %>
-    <% end %>
+<BR>
+  <BR>
+<div align='center'>
+<%= form_tag(showmaps_useranonimos_path, method: "get") do %>
+  <h3><%= label_tag(:q, "Informe seu local atual:") %></h3>
+  <%= text_field_tag(:q) %>
+  <BR>
+    <BR>
+  <%= submit_tag("Informar") %>
+<% end %>
+</div>
 
 
 

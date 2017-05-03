@@ -24,3 +24,7 @@ rails g scaffold Useranonimo local:string
 sudo -u postgres createuser -rds conhecerrecife
 CREATE DATABASE "nomedobanco";
 
+
+
+rails s -b $IP -p $PORT
+

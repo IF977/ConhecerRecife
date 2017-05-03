@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'guard-bundler'
+gem 'guard-rspec'
+gem 'factory_girl_rails'
+gem 'geocoder'
+gem 'bootstrap-generators'
+gem 'gmaps4rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
