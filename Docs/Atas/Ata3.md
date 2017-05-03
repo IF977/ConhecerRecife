@@ -30,7 +30,6 @@ Data         | Local
 Ação         | Responsável   
 ------------ | ------------- 
 Fazer Modelo Entidade Relacionamento do Banco de Dados | Todos
-
 Modelar layout/template do site | Todos
 
 
