@@ -5,9 +5,9 @@
 <BR>
   <BR>
 <div align='center'>
-<%= form_tag(showmaps_useranonimos_path, method: "get") do %>
-  <h3><%= label_tag(:q, "Informe seu local atual:") %></h3>
-  <%= text_field_tag(:q) %>
+<%= form_tag(select_local_useranonimos_path, method: "post") do %>
+  <h3><%= label_tag( "Informe seu local atual:") %></h3>
+  <%= text_field_tag(:local) %>
   <BR>
     <BR>
   <%= submit_tag("Informar") %>
@@ -20,11 +20,13 @@
 
 
 
-
-<!--  <tbody>
+<!--
+  <tbody>
     <% @useranonimos.each do |useranonimo| %>
       <tr>
-        <td><%= useranonimo.local %></td>
+        <td><%= useranonimo.address %></td>
+        <td><%= useranonimo.latitude %></td>
+        <td><%= useranonimo.longitude %></td>
         <td><%= link_to 'Show', useranonimo %></td>
         <td><%= link_to 'Edit', edit_useranonimo_path(useranonimo) %></td>
         <td><%= link_to 'Destroy', useranonimo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

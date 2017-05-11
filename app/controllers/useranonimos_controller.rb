@@ -1,5 +1,31 @@
 class UseranonimosController < ApplicationController
   before_action :set_useranonimo, only: [:show, :edit, :update, :destroy]
+  
+  
+  
+  def select_local
+    @local = Useranonimo.all
+    @local.each do |x|
+      x.destroy
+    end
+    @local = Useranonimo.new
+    @local.address = params[:local]
+    @local.save
+    redirect_to showmaps_useranonimos_path
+  end
+  
+  def showmaps
+    @users = Useranonimo.last
+    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+      marker.infowindow'Você'
+    end
+  end
+  
+  
+  
+  
 
   # GET /useranonimos
   # GET /useranonimos.json

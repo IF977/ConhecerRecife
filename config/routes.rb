@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   
        collection do
           get 'showmaps'
+          post 'select_local'
        end
      end
   root 'useranonimos#index'
