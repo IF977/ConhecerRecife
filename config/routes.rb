@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  root 'useranonimos#index'
+  
   resources :useranonimos do
        member do
          
@@ -6,11 +9,13 @@ Rails.application.routes.draw do
   
        collection do
           get 'showmaps'
+          get 'login'
           post 'select_local'
        end
      end
-  root 'useranonimos#index'
   #root 'useranonimos#showmaps'
+  
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

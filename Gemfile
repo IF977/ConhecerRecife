@@ -37,6 +37,11 @@ gem 'geocoder'
 gem 'bootstrap-generators'
 gem 'gmaps4rails'
 
+#Autenticacao e login no facebook
+gem "devise", git: 'https://github.com/plataformatec/devise.git'
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

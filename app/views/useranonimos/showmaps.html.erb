@@ -3,14 +3,29 @@
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 
 <%= render 'cabecalho' %>
-<BR>
-<BR>
     
 <div align='center'>
+    <p>
+        <table>
+    <% if current_user %>
+      <tr><th>
+      <% if current_user.image.present? %>
+        <%= image_tag(current_user.image, size: "40") %>
+      <% end %>
+      </th></tr>
+      <tr><th>
+      Olá <%= current_user.name %>
+      </th></tr>
+      <tr><th>
+      <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+      </th></tr>
+    <% end %>
+    </table>
+    </p>
 <table>
     <tr>
         <th>
-            <%= button_tag 'Login', type: 'button' %>
+            <%= link_to (button_tag 'Login', type: 'button'), user_session_path %>
         </th>
         <th>
             <%= link_to (button_tag 'Novo Local', type:'button'), useranonimos_path %>
