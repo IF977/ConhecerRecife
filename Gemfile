@@ -56,6 +56,10 @@ group :development, :test do
   gem 'autotest'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'cucumber-rails',:require => false
+  gem 'database_cleaner'
+  gem 'capybara-webkit'
+
 end
 
 group :development do
