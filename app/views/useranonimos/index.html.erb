@@ -1,10 +1,8 @@
+<div align='center'>
 <p id="notice"><%= notice %></p>
 
-<%= render 'cabecalho' %>
+  <%= render 'cabecalho' %>
 
-<BR>
-  <BR>
-<div align='center'>
 <%= form_tag(select_local_useranonimos_path, method: "post") do %>
   <h3><%= label_tag( "Informe seu local atual:") %></h3>
   <%= text_field_tag(:local) %>

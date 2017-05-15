@@ -10,8 +10,12 @@ class UseranonimosController < ApplicationController
     end
     @local = Useranonimo.new
     @local.address = params[:local]
-    @local.save
-    redirect_to showmaps_useranonimos_path
+    if @local.address = ""
+      @local.save
+      redirect_to showmaps_useranonimos_path
+    else
+      redirect_to root_path, notice: 'Informe sua localização!!.'
+    end
   end
   
   def showmaps
