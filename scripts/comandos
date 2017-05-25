@@ -1,0 +1,30 @@
+comandos 
+
+rails;
+
+rails g controller nome_do_controller      ------> cria o controller 
+rails g model nome_do_model atributo1:string atributo2:float   -----> cria o model com os atributos definidos 
+
+Obs: 
+Para criar as views vc cria um novo arquivo na pasta /app/views com a extensao nome.html.erb
+lembrar de criar a rota para as views, para criar as rotas é necessario acessar o arquivo /config/routes.
+Existem varias maneiras de configurar uma rota para saber como acesse esse link http://guides.rubyonrails.org/routing.html
+
+
+Git;
+
+Para adicionar os arquivos editados ou criados no cloud9 siga a sequencia de comandos abaixo:
+
+git add -A   -----> Adiciona todos os arquivos modificados e/ou criados para a area de transferencia para verificar quais arquivos foram adicionados utilize o comando "git status"
+git commit -m "descrição"   -----> Associa aos arquivos adicionados uma descrição da alteração isso serve para visualizar facilmente o que ocorreu e para controle de versão do arquivo.
+git push -u origin master   ------> Envia os arquivos adicionados para o diretorio do git, apos esse comando é necessario inserir seu email e senha cadastrado no git.
+
+
+Heroku;
+
+ssh-keygen -t rsa
+heroku login
+heroku keys:add
+git push heroku master
+
+
