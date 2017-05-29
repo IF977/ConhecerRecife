@@ -1,0 +1,77 @@
+<%= form_with(model: local, local: true) do |form| %>
+  <% if local.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(local.errors.count, "error") %> prohibited this local from being saved:</h2>
+
+      <ul>
+      <% local.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :local_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao, id: :local_descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :logradouro %>
+    <%= form.text_field :logradouro, id: :local_logradouro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro, id: :local_bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo, id: :local_tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :local_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :local_longitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagem %>
+    <%= form.text_field :imagem, id: :local_imagem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, id: :local_telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :site %>
+    <%= form.text_field :site, id: :local_site %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_abre %>
+    <%= form.text_field :hora_abre, id: :local_hora_abre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_fecha %>
+    <%= form.text_field :hora_fecha, id: :local_hora_fecha %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

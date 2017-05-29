@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Local</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Logradouro</th>
+      <th>Bairro</th>
+      <th>Tipo</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Imagem</th>
+      <th>Telefone</th>
+      <th>Site</th>
+      <th>Hora abre</th>
+      <th>Hora fecha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locals.each do |local| %>
+      <tr>
+        <td><%= local.nome %></td>
+        <td><%= local.descricao %></td>
+        <td><%= local.logradouro %></td>
+        <td><%= local.bairro %></td>
+        <td><%= local.tipo %></td>
+        <td><%= local.latitude %></td>
+        <td><%= local.longitude %></td>
+        <td><%= local.imagem %></td>
+        <td><%= local.telefone %></td>
+        <td><%= local.site %></td>
+        <td><%= local.hora_abre %></td>
+        <td><%= local.hora_fecha %></td>
+        <td><%= link_to 'Show', local %></td>
+        <td><%= link_to 'Edit', edit_local_path(local) %></td>
+        <td><%= link_to 'Destroy', local, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to (button_tag 'Novo Local', type: 'button'), new_local_path %>
+<%= link_to (button_tag 'Voltar', type: 'button'), showmaps_useranonimos_path %>

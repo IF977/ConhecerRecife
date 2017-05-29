@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :locals
   root 'useranonimos#index'
   
   resources :useranonimos do

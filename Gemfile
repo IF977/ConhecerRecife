@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'
 # Use sqlite3 as the database for Active Record
@@ -37,6 +38,7 @@ gem 'geocoder'
 gem 'bootstrap-generators'
 gem 'gmaps4rails'
 
+
 #Autenticacao e login no facebook
 gem "devise", git: 'https://github.com/plataformatec/devise.git'
 gem 'omniauth'
@@ -44,6 +46,9 @@ gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'bootstrap-sass'
+gem 'compass-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,7 +63,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'cucumber-rails',:require => false
   gem 'database_cleaner'
-  gem 'capybara-webkit'
+ # gem 'capybara-webkit'
+
 
 end
 

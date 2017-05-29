@@ -7,10 +7,12 @@
       <tr><th>
       <% if current_user.image.present? %>
         <%= image_tag(current_user.image, size: "40") %>
+        Olá <%= current_user.name %>
+        
       <% end %>
       </th></tr>
       <tr><th>
-      Olá <%= current_user.name %>
+      Olá <%= current_user.email %>
       </th></tr>
       <tr><th>
       <%= link_to "Sair", destroy_user_session_path, method: :delete %>
