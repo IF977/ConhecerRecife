@@ -10,6 +10,9 @@ class LocalsController < ApplicationController
   # GET /locals/1
   # GET /locals/1.json
   def show
+    
+    @local = Local.find(params[:id])
+    
   end
 
   # GET /locals/new

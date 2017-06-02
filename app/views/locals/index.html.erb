@@ -24,7 +24,7 @@
   <tbody>
     <% @locals.each do |local| %>
       <tr>
-        <td><%= local.nome %></td>
+        <td><%= link_to  local.nome, local %></td>
         <td><%= local.descricao %></td>
         <td><%= local.logradouro %></td>
         <td><%= local.bairro %></td>

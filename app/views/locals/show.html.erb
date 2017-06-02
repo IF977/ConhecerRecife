@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nome:</strong>
-  <%= @local.nome %>
+  <h2><%= @local.nome %></h2>
+  
 </p>
 
 <p>
@@ -60,5 +60,5 @@
   <%= @local.hora_fecha %>
 </p>
 
-<%= link_to 'Edit', edit_local_path(@local) %> |
-<%= link_to 'Back', locals_path %>
+<%= link_to 'Editar', edit_local_path(@local) %> |
+<%= link_to 'Voltar', locals_path %>
