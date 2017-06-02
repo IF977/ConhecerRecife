@@ -66,6 +66,19 @@ class LocalsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
+  
+  
+  def showmapslocal
+    
+    @local = local_params
+    @hash = Gmaps4rails.build_markers(@local) do |id, marker|
+      marker.lat local.latitude
+      marker.lng local.longitude
+      marker.infowindow local.nome 'Sua atração'
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
