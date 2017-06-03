@@ -66,30 +66,6 @@
   <%= @local.hora_fecha %>
 </p>
 
-<div style='width: 500px;'>
-  <div id="map" style='width: 400px; height: 300px;'></div>
-</div>
-<script>
-handler = Gmaps.build('Google');
-handler.buildMap({
-    provider: {
-      disableDefaultUI: false
-    },
-    internal: {
-      id: 'map'
-    }
-  },
-  function(){
-    markers = handler.addMarkers(<%=raw @hash.to_json %>);
-    
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-    handler.getMap().setZoom(17);
-  }
-);
-</script>
-
-<div>
 
 <%= link_to 'Editar', edit_local_path(@local) %> |
 <%= link_to 'Voltar', locals_path %>

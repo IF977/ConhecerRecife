@@ -72,10 +72,10 @@ class LocalsController < ApplicationController
   
   def showmapslocal
     
-    @local = local_params
+    @local = Local.id
     @hash = Gmaps4rails.build_markers(@local) do |id, marker|
-      marker.lat local.latitude
-      marker.lng local.longitude
+      marker.lat @local.latitude
+      marker.lng @local.longitude
       marker.infowindow local.nome 'Sua atração'
     end
   end

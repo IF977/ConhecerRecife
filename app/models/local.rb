@@ -1,4 +1,5 @@
 class Local < ApplicationRecord
-    geocoded_by :local_params
+    geocoded_by :id
     after_validation :geocode
 end
+
