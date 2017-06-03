@@ -105,6 +105,6 @@ Movie.create!([
         site: "",
         hora_abre: "16h",
         hora_fecha: "22h"
-    },	 		
+    }	 		
 
 ])

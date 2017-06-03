@@ -67,18 +67,6 @@ class LocalsController < ApplicationController
     end
   end
   
-  
-  
-  
-  def showmapslocal
-    
-    @local = Local.id
-    @hash = Gmaps4rails.build_markers(@local) do |id, marker|
-      marker.lat @local.latitude
-      marker.lng @local.longitude
-      marker.infowindow local.nome 'Sua atração'
-    end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

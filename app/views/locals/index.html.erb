@@ -14,7 +14,7 @@
     <% @locals.each do |local| %>
       <tr>
         <td><h3><%= link_to  local.nome, local %></h3>
-          <p style = 'width: 80, height: 40'><%= image_tag(local.imagem) %> </p>
+          <p><%= image_tag(local.imagem) %> </p>
         </td>
         <td><%= local.descricao %></td>
         
