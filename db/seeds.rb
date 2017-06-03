@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Movie.create!([
+Local.create!([
     {
         nome: "Museu do Homem do Nordeste",
         descricao: "São cerca de 15 mil peças no acervo retratando a formação do povo nordestino considerado um dos mais importantes museus antropológicos brasileiros.",
