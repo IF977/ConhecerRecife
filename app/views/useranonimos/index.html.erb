@@ -6,6 +6,10 @@
 <%= form_tag(select_local_useranonimos_path, method: "post") do %>
   <h3><%= label_tag( "Informe seu local atual:") %></h3>
   <%= text_field_tag(:local) %>
+  <br><br>
+
+  <%= image_tag 'ConhecerRecifeLogo.png', size: '150'%>
+  
   <BR>
     <BR>
   <%= submit_tag("Prosseguir") %>

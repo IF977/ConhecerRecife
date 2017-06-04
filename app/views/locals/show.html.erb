@@ -5,7 +5,14 @@
 
 
 <p id="notice"><%= notice %></p>
-
+<table><tr>
+  
+<td>
+   <p> <%= image_tag(@local.imagem) %> </p>
+</td>
+  
+  <td>
+  
 <p>
   <h2><%= @local.nome %></h2>
   
@@ -41,10 +48,6 @@
   <%= @local.longitude %>
 </p>
 
-<p>
-  <strong>Imagem:</strong>
-  <%= @local.imagem %>
-</p>
 
 <p>
   <strong>Telefone:</strong>
@@ -65,7 +68,10 @@
   <strong>Hora fecha:</strong>
   <%= @local.hora_fecha %>
 </p>
+</td>
 
+</tr>
+</table>
 
 <%= link_to 'Editar', edit_local_path(@local) %> |
 <%= link_to 'Voltar', locals_path %>
