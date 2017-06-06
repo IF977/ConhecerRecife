@@ -1,5 +1,5 @@
 class LocalsController < ApplicationController
-  before_action :set_local, only: [:show, :edit, :update, :destroy]
+  before_action :set_local, only: [:show, :edit, :update, :destroy, :busca]
 
   # GET /locals
   # GET /locals.json
@@ -67,6 +67,11 @@ class LocalsController < ApplicationController
     end
   end
   
+  def busca
+    
+    @local = Local.find(params[:tipo])
+    
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
