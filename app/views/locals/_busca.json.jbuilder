@@ -1,1 +1,0 @@
-json.partial! "locals/local", tipo: @local

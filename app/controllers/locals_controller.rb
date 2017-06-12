@@ -67,11 +67,6 @@ class LocalsController < ApplicationController
     end
   end
   
-  def busca
-    
-    @local = Local.find(params[:tipo])
-    
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

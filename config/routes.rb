@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :buscas
   resources :locals
   root 'useranonimos#index'
+  
+  resources :busca
+  root 'busca#index'
   
   resources :useranonimos do
        member do
