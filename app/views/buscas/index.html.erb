@@ -1,21 +1,19 @@
+<div class="container">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Buscas</h1>
+<h1>Escolha sua atração! </h1>
 
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
+<div class="list-group">
+  <div class="list-group-item active">
+   <h3> Tipo de Atração </h3>
+  </div>
+  <%=link_to 'Ponto Turístico ', locals_path,  class:"list-group-item"%>
+  <a href="#" class="list-group-item">Museus</a>
+  <a href="#" class="list-group-item">Feiras e Mercados</a>
+  <a href="#" class="list-group-item">Teatros</a>
 </div>
- 
+
 
 <table>
   <thead>
@@ -24,7 +22,10 @@
     </tr>
   </thead>
 
-  <tbody>
+</div>
+
+
+  <tbody >
     <% @buscas.each do |busca| %>
       <tr>
         <td><%= link_to 'Show', busca %></td>

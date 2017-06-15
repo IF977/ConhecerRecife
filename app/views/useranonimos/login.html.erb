@@ -1,3 +1,4 @@
+<div class="container">
 <p>
   Hello <%= current_user.email %>
   <% if current_user.image.present? %>
@@ -6,3 +7,4 @@
   </p>
 </br>
 <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+</div>
