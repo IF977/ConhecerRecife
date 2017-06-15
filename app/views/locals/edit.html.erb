@@ -1,6 +1,14 @@
-<h1>Editing Local</h1>
+<div class='container'>
+    <div class="panel panel-default">
+      <div class="panel-heading"><h2>Editando Local</h2></div>
+      <div class="panel-body">
+        <%= render 'form', local: @local %>
+      </div>
+    </div>
+</div>
 
-<%= render 'form', local: @local %>
 
-<%= link_to 'Show', @local %> |
-<%= link_to 'Back', locals_path %>
+
+
+<%= link_to 'Visualizar', @local, class:'btn btn-info' %> |
+<%= link_to 'Voltar', locals_path, class:'btn btn-default' %>

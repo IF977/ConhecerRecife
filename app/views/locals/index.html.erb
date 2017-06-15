@@ -1,6 +1,9 @@
+<div class="container">
+<div class="jumbotron">
+
 <p id="notice"><%= notice %></p>
 
-<h1>Local</h1>
+<h2>Local</h2>
 
 <table>
   <thead>
@@ -14,9 +17,9 @@
     <% @locals.each do |local| %>
       <tr>
         <td><h3><%= link_to  local.nome, local %></h3>
-          <p><%= image_tag(local.imagem) %> </p>
+          <p><%= image_tag(local.imagem)%> </p>
         </td>
-        <td><%= local.descricao %></td>
+        <td><h3><%= local.descricao %></h3></td>
         
         
        
@@ -28,7 +31,11 @@
   </tbody>
 </table>
 
+</div>
+
 <br>
 
-<%= link_to (button_tag 'Novo Local', type: 'button'), new_local_path %>
-<%= link_to (button_tag 'Voltar', type: 'button'), showmaps_useranonimos_path %>
+<%= link_to 'Novo Local', new_local_path, class: "btn btn-default" %>
+<%= link_to 'Voltar', showmaps_useranonimos_path, class: "btn btn-default" %>
+
+</div>

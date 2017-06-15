@@ -1,74 +1,74 @@
-
+<div class="container">
 <div class="jumbotron">
-<p id="notice"><%= notice %></p>
-<table><tr>
-  
-<td>
-   <p> <%= image_tag(@local.imagem) %> </p>
-</td>
+  <p id="notice"><%= notice %></p>
+  <table><tr>
+    <h2><%= @local.nome %></h2>
+  <td>
+     <p> <%= image_tag(@local.imagem)%> <tr></tr> </p>
+  </td>
   
   <td>
+    
+  <p>
+  </p>
+   
+  <p>
+    <strong>Descricao:</strong>
+    <%= @local.descricao %>
+  </p>
   
-<p>
-  <h2><%= @local.nome %></h2>
+  <p>
+    <strong>Logradouro:</strong>
+    <%= @local.logradouro %>
+  </p>
   
-</p>
-
-<p>
-  <strong>Descricao:</strong>
-  <%= @local.descricao %>
-</p>
-
-<p>
-  <strong>Logradouro:</strong>
-  <%= @local.logradouro %>
-</p>
-
-<p>
-  <strong>Bairro:</strong>
-  <%= @local.bairro %>
-</p>
-
-<p>
-  <strong>Tipo:</strong>
-  <%= @local.tipo %>
-</p>
-
-<p>
-  <strong>Latitude:</strong>
-  <%= @local.latitude %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @local.longitude %>
-</p>
-
-
-<p>
-  <strong>Telefone:</strong>
-  <%= @local.telefone %>
-</p>
-
-<p>
-  <strong>Site:</strong>
-  <%= @local.site %>
-</p>
-
-<p>
-  <strong>Hora abre:</strong>
-  <%= @local.hora_abre %>
-</p>
-
-<p>
-  <strong>Hora fecha:</strong>
-  <%= @local.hora_fecha %>
-</p>
-</td>
-
-</tr>
-</table>
+  <p>
+    <strong>Bairro:</strong>
+    <%= @local.bairro %>
+  </p>
+  
+  <p>
+    <strong>Tipo:</strong>
+    <%= @local.tipo %>
+  </p>
+  
+  <p>
+    <strong>Latitude:</strong>
+    <%= @local.latitude %>
+  </p>
+  
+  <p>
+    <strong>Longitude:</strong>
+    <%= @local.longitude %>
+  </p>
+  
+  
+  <p>
+    <strong>Telefone:</strong>
+    <%= @local.telefone %>
+  </p>
+  
+  <p>
+    <strong>Site:</strong>
+    <%= @local.site %>
+  </p>
+  
+  <p>
+    <strong>Hora abre:</strong>
+    <%= @local.hora_abre %>
+  </p>
+  
+  <p>
+    <strong>Hora fecha:</strong>
+    <%= @local.hora_fecha %>
+  </p>
+ 
+  </td>
+  
+  </tr>
+  </table>
 </div>
 
-<%= link_to 'Editar', edit_local_path(@local) %> |
-<%= link_to 'Voltar', locals_path %>
+<%= link_to 'Editar', edit_local_path(@local), class: "btn btn-default" %> |
+<%= link_to 'Voltar', locals_path, class: "btn btn-default" %>
+</div>

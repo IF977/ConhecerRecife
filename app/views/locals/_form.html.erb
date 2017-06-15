@@ -11,67 +11,67 @@
     </div>
   <% end %>
 
-  <p>
+  <p class="form-group">
     <%= form.label :nome %>
-    <%= form.text_field :nome, id: :local_nome %>
+    <%= form.text_field :nome, id: :local_nome, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :descricao %>
-    <%= form.text_area :descricao, id: :local_descricao, cols: 50, rows: 5 %>
+    <%= form.text_area :descricao, id: :local_descricao, cols: 50, rows: 5, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :logradouro %>
-    <%= form.text_field :logradouro, id: :local_logradouro %>
+    <%= form.text_field :logradouro, id: :local_logradouro, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :bairro %>
-    <%= form.text_field :bairro, id: :local_bairro %>
+    <%= form.text_field :bairro, id: :local_bairro, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :tipo %>
-    <%= form.text_field :tipo, id: :local_tipo %>
+    <%= form.text_field :tipo, id: :local_tipo, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :latitude %>
-    <%= form.text_field :latitude, id: :local_latitude %>
+    <%= form.text_field :latitude, id: :local_latitude, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :longitude %>
-    <%= form.text_field :longitude, id: :local_longitude %>
+    <%= form.text_field :longitude, id: :local_longitude, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :imagem %>
-    <%= form.text_field :imagem, id: :local_imagem %>
+    <%= form.text_field :imagem, id: :local_imagem, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :telefone %>
-    <%= form.text_field :telefone, id: :local_telefone %>
+    <%= form.text_field :telefone, id: :local_telefone, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :site %>
-    <%= form.text_field :site, id: :local_site %>
+    <%= form.text_field :site, id: :local_site, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :hora_abre %>
-    <%= form.text_field :hora_abre, id: :local_hora_abre %>
+    <%= form.text_field :hora_abre, id: :local_hora_abre, class:"form-control" %>
   </p>
 
-  <p>
+  <p class="form-group">
     <%= form.label :hora_fecha %>
-    <%= form.text_field :hora_fecha, id: :local_hora_fecha %>
+    <%= form.text_field :hora_fecha, id: :local_hora_fecha, class:"form-control" %>
   </p>
 
   <p>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
   </p>
 <% end %>
