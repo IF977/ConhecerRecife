@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :locals
   root 'useranonimos#index'
   
-  resources :busca
+  resources :buscas
   root 'busca#index'
   
   resources :useranonimos do

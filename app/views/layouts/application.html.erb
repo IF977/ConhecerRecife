@@ -28,7 +28,41 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     
       </ul>
+       
+      
+      
       <form class="navbar-form navbar-right">
+        
+        
+          
+          <table>
+            
+        <% if current_user %>
+        <span class="label label-primary">
+        <% if current_user.image.present? %>
+          <%= image_tag(current_user.image, size: "40") %>
+          
+          Olá <%= current_user.name %>
+         
+          
+        <% end %>
+        
+         
+        Olá <%= current_user.email %>
+        
+        </span>
+         
+         <tr><span class="label label-defaultr">
+         <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+         </span>
+         
+         <% end %>
+         
+         </tr>
+         </table> 
+          
+        
+        
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Pesquisa">
         </div>
@@ -40,4 +74,4 @@
 </nav>
       <%= yield %>
     </body>
-    </html>
+</html>
