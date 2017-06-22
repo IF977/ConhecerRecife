@@ -4,12 +4,24 @@ class BuscasController < ApplicationController
   # GET /buscas
   # GET /buscas.json
   def index
-    @buscas = Busca.all
+   # @buscas = Busca.all
+    if params[:search]
+      
+      @locals = Local.where(tipo: params[:search])
+    else
+      @locals = Local.all
+    end
   end
 
   # GET /buscas/1
   # GET /buscas/1.json
   def show
+  end
+  
+  def show_tipo
+    
+    
+    
   end
 
   # GET /buscas/new

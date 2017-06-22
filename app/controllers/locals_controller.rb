@@ -4,7 +4,13 @@ class LocalsController < ApplicationController
   # GET /locals
   # GET /locals.json
   def index
-    @locals = Local.all
+    
+    if params[:search]
+      
+      @locals = Local.where(tipo: params[:search])
+    else
+      @locals = Local.all
+    end
   end
 
   # GET /locals/1
@@ -14,7 +20,7 @@ class LocalsController < ApplicationController
     @local = Local.find(params[:id])
     
   end
-
+  
   # GET /locals/new
   def new
     @local = Local.new

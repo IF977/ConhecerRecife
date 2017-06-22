@@ -1,0 +1,7 @@
+<h1><%= @local.tipo -%></h1>
+
+<ul>
+   <% @local.tipo.each do |c| %>
+   <li><%= link_to c.nome, :action => "show", :id => c.id -%></li>
+   <% end %>
+</ul>
