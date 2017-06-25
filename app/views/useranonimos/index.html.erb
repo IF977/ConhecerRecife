@@ -1,6 +1,9 @@
+
 <div align='center'>
 <p id="notice"><%= notice %></p>
 
+<div class='container'>
+  <div class='jumbotron'>
   <%= render 'cabecalho' %>
 
 <%= form_tag(select_local_useranonimos_path, method: "post") do %>
@@ -15,8 +18,8 @@
   <%= submit_tag("Prosseguir") %>
 <% end %>
 </div>
-
-
+</div>
+</div>
 
 
 
