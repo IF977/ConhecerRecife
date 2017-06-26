@@ -3,7 +3,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<h2>Local</h2>
+<h2>Locais</h2>
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
     <% @locals.each do |local| %>
       <tr>
         <td><h3><%= link_to  local.nome, local %></h3>
-          <p><%= image_tag(local.imagem)%> </p>
+          <p><%= imagem(local)%> </p>
         </td>
         <td><h3><%= local.descricao %></h3></td>
         
@@ -37,5 +37,6 @@
 
 <%= link_to 'Novo Local', new_local_path, class: "btn btn-default" %>
 <%= link_to 'Voltar', showmaps_useranonimos_path, class: "btn btn-default" %>
+<%= link_to 'Todos', locals_path, class: "btn btn-default" %>
 
 </div>
