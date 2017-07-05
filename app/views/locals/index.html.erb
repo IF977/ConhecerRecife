@@ -1,5 +1,5 @@
 <div class="container">
-<div class="jumbotron">
+
 
 <p id="notice"><%= notice %></p>
 
@@ -15,7 +15,22 @@
 
   <tbody>
     <% @locals.each do |local| %>
-      <tr>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-7">
+                
+                    <%= imagem(local)%>
+                
+            </div>
+            <div class="col-md-5">
+                <h3><%= link_to  local.nome, local %></h3>
+                <h4></h4>
+                <p><%= local.descricao %></p>
+                <%= link_to  'Detalhes', local, class:"btn btn-primary action" %> 
+            </div>
+        </div>
+    </div>
+<!--      <tr>
         <td><h3><%= link_to  local.nome, local %></h3>
           <p><%= imagem(local)%> </p>
         </td>
@@ -26,14 +41,17 @@
         <td><%= link_to '', local %></td>
         <td><%= link_to '', edit_local_path(local) %></td>
         <td><%= link_to '', local, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      </tr> 
+  -->
     <% end %>
+    
   </tbody>
 </table>
 
-</div>
+
 
 <br>
+
 
 <%= link_to 'Novo Local', new_local_path, class: "btn btn-default" %>
 <%= link_to 'Voltar', showmaps_useranonimos_path, class: "btn btn-default" %>
