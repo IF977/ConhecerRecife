@@ -132,7 +132,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.11.3)
     formatador (0.2.5)
-    geocoder (1.4.3)
+    geocoder (1.6.1)
     gherkin (4.1.1)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
